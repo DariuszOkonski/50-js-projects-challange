@@ -1,0 +1,22 @@
+.btn-home-back {
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    width: 70px;
+
+    background-color: crimson;
+    color: white;
+
+    font-size: 24px;
+    text-decoration: none;
+    font-family: monospace;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: 0.2 ease;
+}
+
+.btn-home-back:hover {
+    background-color: rgb(158, 9, 39);
+}
