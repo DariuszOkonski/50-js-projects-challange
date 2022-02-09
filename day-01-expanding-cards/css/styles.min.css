@@ -48,6 +48,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 .container__block--active {
@@ -70,8 +72,8 @@ body {
   letter-spacing: 1px;
   font-size: 1.2rem;
   opacity: 0;
-  -webkit-transition: 0.2 ease 0.4;
-  transition: 0.2 ease 0.4;
+  -webkit-transition: 0.2s ease 0.2s;
+  transition: 0.2s ease 0.2s;
 }
 
 .container div:nth-of-type(1) {
