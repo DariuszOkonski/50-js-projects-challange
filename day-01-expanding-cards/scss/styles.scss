@@ -23,7 +23,6 @@ body {
 .container {
     width: 80vw;
     height: 80vh;
-    background-color: yellow;
     display: flex;
 
     &__block {
@@ -34,7 +33,7 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         cursor: pointer;
-        transition: 1s ease;
+        transition: 1.4s ease;
 
         &--active {
             flex: 5;
@@ -54,7 +53,7 @@ body {
             letter-spacing: 1px;
             font-size: 1.2rem;
             opacity: 0;
-            transition: 0.2s ease 0.2s;
+            transition: 0.2s ease 0.4s;
         }
     }
 

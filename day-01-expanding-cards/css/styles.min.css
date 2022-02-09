@@ -32,7 +32,6 @@ body {
 .container {
   width: 80vw;
   height: 80vh;
-  background-color: yellow;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,8 +47,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
+  -webkit-transition: 1.4s ease;
+  transition: 1.4s ease;
 }
 
 .container__block--active {
@@ -72,8 +71,8 @@ body {
   letter-spacing: 1px;
   font-size: 1.2rem;
   opacity: 0;
-  -webkit-transition: 0.2s ease 0.2s;
-  transition: 0.2s ease 0.2s;
+  -webkit-transition: 0.2s ease 0.4s;
+  transition: 0.2s ease 0.4s;
 }
 
 .container div:nth-of-type(1) {
