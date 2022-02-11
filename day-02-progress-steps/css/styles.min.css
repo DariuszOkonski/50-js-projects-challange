@@ -75,6 +75,8 @@ body {
 }
 
 .container .progress-container .step.active {
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
   border-color: #4399b6;
 }
 
@@ -87,17 +89,18 @@ body {
           transform: translateY(-50%);
 }
 
-.container .progress-container .bar::before {
-  content: '';
+.container .progress-container .bar-progress {
   position: absolute;
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   height: 6px;
-  width: 200px;
+  width: 0%;
   background-color: #4399b6;
   z-index: 200;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
 }
 
 .container .btn-container {
