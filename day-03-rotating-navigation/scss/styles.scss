@@ -100,7 +100,7 @@ body {
 }
 
 .content {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -114,7 +114,6 @@ body {
     }
 
     &__container {
-        background-color: yellow;
         width: 100%;
         max-width: 1200px;
         margin: 50px auto;
@@ -127,6 +126,27 @@ body {
         letter-spacing: 1px;
         text-transform: uppercase;
         text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__author {
+        display: block;
+        text-transform: uppercase;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    &__paragraph {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin: 10px auto;
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 100;
+        margin: 10px auto;
     }
 
     &__img {
