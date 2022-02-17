@@ -3,6 +3,7 @@
     right: 5px;
     top: 5px;
     width: 70px;
+    z-index: 100;
 
     background-color: crimson;
     color: white;
