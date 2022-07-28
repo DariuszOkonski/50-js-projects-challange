@@ -1,21 +1,24 @@
-const loadText = document.querySelector('.loading-text');
-const bg = document.querySelector('.bg');
+const counter = document.querySelector('.counter');
+const background = document.querySelector('.background');
 
-let load = 0;
-let int = setInterval(blurring, 30);
+let index = 0;
+let opacityCounter = 1;
+let blurCounter = 30;
 
+const interval = setInterval(() => {
+    index++;
+    opacityCounter -= 0.01
+    blurCounter -= 0.3;
 
-function blurring() {
-    load++
-    if(load > 99) {
-        clearInterval(int);
-    }
+    counter.innerText = `${index}%`
+    counter.style.opacity = opacityCounter.toFixed(2);
+    background.style.filter = `blur(${blurCounter.toFixed(2)}px)`;
     
-    loadText.innerText = `${load}%`;
-    loadText.style.opacity = scale(load, 0, 100, 1, 0);
-    bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`;
-}
+    if(index >= 100) {
+        clearInterval(interval);
+        counter.innerText = 'Welcome'
+        counter.style.opacity = 1;
+    }
 
-const scale = (num, in_min, in_max, out_min, out_max) => {
-    return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-}
+
+}, 30);

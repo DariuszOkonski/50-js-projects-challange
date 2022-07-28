@@ -1,32 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
-
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Ubuntu', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+html, body {
+    width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
 }
 
-.bg {
-    background: url('./raspberry.jpg') no-repeat center center/cover;
-    position: absolute;
-    top: -30px;
-    left: -30px;
-    width: calc(100vw + 60px);
-    height: calc(100vh + 60px);
-    z-index: -1;
-    filter: blur(0px);
-}
-
-.loading-text {
-    font-size: 50px;
+.counter {
+    font-size: 8rem;
     color: #fff;
+}
+
+.background {
+    position: fixed;
+    top: -30px;
+    left: -30px0;
+    width: 130vw;
+    height: 130vh;
+    z-index: -1;
+    background-image: url('./raspberry.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: blur(30px);
 }
