@@ -5,13 +5,128 @@
 }
 
 body {
-  margin: 0;
-  padding: 20px;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(75, 75, 228);
+  background-color: #cccdcf;
+  text-align: center;
+  padding: 20px;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.main-description {
+  margin: 20px 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.main-number {
+  font-weight: bold;
+}
+
+.container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-number {
+  font-size: 14rem;
+  margin: 0;
+  font-weight: 100;
+}
+
+.container-second {
+  background-color: #fff;
+  max-width: 600px;
+  width: 100%;
+  padding: 30px;
+  font-size: 1.6rem;
+  line-height: 180%;
+  font-weight: 100;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  border: 1px solid #efefef;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.block-container {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  margin: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 200px;
+  min-width: 200px;
+  min-height: 30vh;
+
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.block:hover {
+  transform: scale(1.05);
+}
+
+.block-header {
+  background-color: #204ecf;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+.block-content {
+  flex-grow: 1;
+  background-color: rgb(216, 215, 215);
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.block-content-history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.letter-history {
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 15px 20px;
+  margin: 5px;
+}
+
+.block-footer {
+  font-size: 0.6rem;
+  opacity: 0.8;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  background-color: transparent;
+  font-weight: 100;
+  padding: 10px;
 }

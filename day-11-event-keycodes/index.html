@@ -17,7 +17,65 @@
   <body>
     <a class="btn-home-back" href="../index.html">back</a>
 
-    <h1>Event keycodes</h1>
+    <h2 class="main-description">
+      <!-- hidden -->
+      Java Script Key Code
+      <span id="main-number" class="main-number hidden"></span>
+    </h2>
+
+    <div class="container">
+      <!-- hidden -->
+      <div id="container-first" class="container-first hidden">
+        <h1 id="header-number" class="header-number"></h1>
+        <small class="header-description">Key Code Information</small>
+
+        <div class="block-container">
+          <div class="block">
+            <small class="block-header">event.key</small>
+            <p id="block-content-key" class="block-content"></p>
+            <p class="block-footer">
+              The value of the key pressed. Accounts for modifiers keys that
+              return CAPS and alternate chars.
+            </p>
+          </div>
+
+          <div class="block">
+            <small class="block-header">event.code</small>
+            <p id="block-content-code" class="block-content"></p>
+            <p class="block-footer">
+              The physical key on the keyboard. Doesn't care if you are holding
+              a modifier like Shift.
+            </p>
+          </div>
+
+          <div class="block">
+            <small class="block-header">event.keyCode</small>
+            <p id="block-content-keycode" class="block-content"></p>
+            <p class="block-footer">
+              The physical key on the keyboard. Doesn't care if you are holding
+              a modifier like Shift.
+            </p>
+          </div>
+
+          <div class="block">
+            <small class="block-header">history</small>
+            <div class="block-content">
+              <div
+                id="block-content-history"
+                class="block-content-history"
+              ></div>
+            </div>
+            <p class="block-footer">Pressed buttons history</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- hidden -->
+      <div id="container-second" class="container-second">
+        <p>Press any Key to get the</p>
+        <p>JavaScript event keycode info</p>
+      </div>
+    </div>
 
     <script src="./script.js"></script>
   </body>
