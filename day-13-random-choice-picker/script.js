@@ -2,6 +2,8 @@ const textarea = document.getElementById("textarea");
 const tags = document.getElementById("tags");
 let words = [];
 const HIGHLIGHT = "highlight";
+const SHORT_STEP = 300;
+const LONG_STEP = 3000;
 
 textarea.addEventListener("keyup", (e) => {
   let tempString = e.target.value;
@@ -21,12 +23,14 @@ function runToggleClasses() {
   if (nodesLength > 0) {
     const intervale = setInterval(() => {
       toggleClass(nodesLength);
-    }, 300);
+    }, SHORT_STEP);
 
     setTimeout(() => {
       clearInterval(intervale);
-      setLastElement(nodesLength);
-    }, 3000);
+      setTimeout(() => {
+        setLastElement(nodesLength);
+      }, SHORT_STEP);
+    }, LONG_STEP);
   }
 }
 
@@ -42,7 +46,7 @@ function toggleClass(nodesLength) {
   nodeToChange.classList.add(HIGHLIGHT);
   setTimeout(() => {
     nodeToChange.classList.remove(HIGHLIGHT);
-  }, 150);
+  }, SHORT_STEP / 2);
 }
 
 function getNode(nodesLength) {
