@@ -12,12 +12,34 @@
     <link rel="stylesheet" href="../main.css" />
     <link rel="stylesheet" href="./style.css" />
 
-    <title>Random Choice Picker</title>
+    <script
+      src="https://kit.fontawesome.com/39871aa8d6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <title>Animated Navigation</title>
   </head>
   <body>
     <a class="btn-home-back" href="../index.html">back</a>
 
-    <h1>Animated Navigation</h1>
+    <h1 id="title">Animated Navigation</h1>
+
+    <div class="container">
+      <nav class="active">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Works</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button id="btn" class="btn">x</button>
+      </nav>
+    </div>
 
     <script src="./script.js"></script>
   </body>
