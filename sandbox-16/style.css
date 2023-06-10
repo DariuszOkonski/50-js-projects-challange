@@ -12,7 +12,7 @@
 body {
   background-color: #3494e4;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,16 +46,20 @@ h3 {
   width: 50px;
   border-radius: 0 0 15px 15px;
   background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
   font-size: 14px;
   align-items: center;
   justify-content: center;
   text-align: center;
   margin: 5px;
   transition: 0.3s ease;
-  cursor: pointer;
 }
 
-.cup.cup-small.full {
+.cup.cup-small::selection {
+  background: none;
+}
+
+.cup.cup.cup-small.full {
   background-color: var(--fill-color);
   color: #fff;
 }
@@ -90,10 +94,10 @@ h3 {
 .percentage {
   background-color: var(--fill-color);
   display: flex;
+  align-items: center;
   justify-content: center;
   font-weight: bold;
   font-size: 30px;
-
   height: 0;
   transition: 0.3s ease;
 }
