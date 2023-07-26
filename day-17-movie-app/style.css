@@ -47,6 +47,7 @@ body {
 
 .container {
   margin: 0 auto;
+  /* background-color: yellow; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,6 +67,11 @@ body {
 
   position: relative;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.picture:hover {
+  transform: scale(1.02);
 }
 
 .picture .image {
